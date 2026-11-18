@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DevToolbox — Offline Developer Utilities</title>
+  <meta name="description" content="A fast, offline-first developer toolbox: JSON, JWT, Base64, hashing, UUID, colour, cron and more. 100% local — nothing leaves your browser." />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%B0%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button id="menu" class="icon-btn only-mobile" aria-label="Toggle menu">☰</button>
+    <div class="brand"><span class="logo">🧰</span> DevToolbox</div>
+    <span class="pill" title="Everything runs in your browser. No requests, no tracking.">🔒 100% local</span>
+    <div class="spacer"></div>
+    <button id="palette-open" class="kbd-btn" title="Quick switch">⌘K</button>
+    <a class="icon-btn" href="https://github.com/karthik1210100" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">★</a>
+    <button id="theme" class="icon-btn" aria-label="Toggle theme">☀</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <input id="filter" class="filter" type="search" placeholder="Filter tools…" aria-label="Filter tools" />
+      <nav id="nav" class="nav"></nav>
+      <div class="side-foot">Offline-ready PWA · zero dependencies</div>
+    </aside>
+
+    <main class="main">
+      <div class="tool-head">
+        <h1 id="tool-title">—</h1>
+        <p id="tool-desc" class="muted">—</p>
+      </div>
+      <section id="tool-root" class="card"></section>
+      <footer class="foot">
+        Built with vanilla JS — no frameworks, no build step, no network calls.
+        <a href="https://github.com/karthik1210100" target="_blank" rel="noopener">View source</a>
+      </footer>
+    </main>
+  </div>
+
+  <div id="palette" class="palette" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="palette-box">
+      <input id="palette-input" class="palette-input" placeholder="Jump to a tool…" aria-label="Search tools" />
+      <div id="palette-list" class="palette-list"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
