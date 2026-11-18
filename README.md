@@ -9,6 +9,10 @@
   <img src="https://img.shields.io/badge/PWA-offline%20ready-6366f1?style=for-the-badge" alt="PWA" />
 </p>
 
+<p align="center">
+  <a href="https://karthik1210100.github.io/dev-toolbox/"><img src="./screenshot.jpg" alt="DevToolbox — a sidebar of developer tools with the Colour + Contrast utility open" width="840" /></a>
+</p>
+
 ---
 
 ## Why DevToolbox?
