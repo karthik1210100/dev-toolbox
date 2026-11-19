@@ -62,14 +62,30 @@ dev-toolbox/
 └── manifest.webmanifest
 ```
 
-## 🖥️ Run locally
+## 🐳 Self-hosting
 
-Because there's no build step, any static server works:
+DevToolbox is just static files, so you can run a **private, self-hosted instance in seconds** — on your own machine or server, air-gapped, with zero external calls. Because every tool runs client-side, a self-hosted instance never phones home, which makes it ideal for teams that can't send tokens, JSON or secrets to a public site.
+
+**From source with Docker Compose** (one command):
 
 ```bash
 git clone https://github.com/karthik1210100/dev-toolbox.git
 cd dev-toolbox
-python3 -m http.server 8080   # then open http://localhost:8080
+docker compose up -d          # → http://localhost:8080
+```
+
+**Prebuilt image from the GitHub Container Registry** (no clone, no build):
+
+```bash
+docker run -p 8080:80 ghcr.io/karthik1210100/dev-toolbox   # → http://localhost:8080
+```
+
+A fresh image is published to GHCR on every change by the [Publish Docker image](.github/workflows/docker.yml) workflow.
+
+**No Docker?** Any static server works:
+
+```bash
+python3 -m http.server 8080   # → http://localhost:8080
 ```
 
 ## 🤝 Contributing
