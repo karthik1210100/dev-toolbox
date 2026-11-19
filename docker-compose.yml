@@ -1,0 +1,9 @@
+# Run a private DevToolbox instance:  docker compose up -d  ->  http://localhost:8080
+services:
+  devtoolbox:
+    build: .
+    image: dev-toolbox
+    container_name: devtoolbox
+    ports:
+      - "8080:80"
+    restart: unless-stopped
