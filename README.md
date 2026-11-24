@@ -94,4 +94,14 @@ Each tool is a small object in `app.js` with a `render()` method, backed by a pu
 
 ## 📄 License
 
-[MIT](./LICENSE) © Karthikeyan
+[MIT](./LICENSE) © Karthikeyan Subramanian
+
+---
+
+<div align="center">
+
+Built by [Karthikeyan Subramanian](https://github.com/karthik1210100) &middot; [LinkedIn](https://www.linkedin.com/in/karthik-webdev/) &middot; [Portfolio](https://karthik1210100.github.io/portfolio_2026/)
+
+**Open to full-stack / web developer roles** &middot; Rails · React · TypeScript
+
+</div>
