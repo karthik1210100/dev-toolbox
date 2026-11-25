@@ -17,7 +17,7 @@
 
 ## Why DevToolbox?
 
-Most "developer utility" sites paste your tokens, JSON and secrets into a server you don't control. DevToolbox does the opposite: **every tool runs 100% client-side** using the browser's native APIs (`crypto.subtle`, `TextEncoder`, `URL`). It works offline, installs as a PWA, and ships as plain static files — so it's fast, private, and auditable in a single read.
+Most "developer utility" sites paste your tokens, JSON and secrets into a server you don't control. DevToolbox does the opposite: **every tool runs entirely client-side** using the browser's native APIs (`crypto.subtle`, `TextEncoder`, `URL`). It works offline, installs as a PWA, and ships as plain static files — so it's fast, private, and auditable in a single read.
 
 ## ✨ Features
 
