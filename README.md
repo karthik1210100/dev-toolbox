@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://karthik1210100.github.io/dev-toolbox/"><img src="./screenshot.jpg" alt="DevToolbox — a sidebar of developer tools with the Colour + Contrast utility open" width="840" /></a>
+  <a href="https://karthik1210100.github.io/dev-toolbox/"><img src="./devtoolbox-demo.gif" alt="DevToolbox demo — formatting JSON, decoding a JWT, checking colour contrast, the ⌘K command palette, and switching themes" width="840" /></a>
 </p>
 
 ---
